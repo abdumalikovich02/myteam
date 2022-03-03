@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Sass/shared.css">
+    <link rel="stylesheet" href="Sass/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="background"></div>
+        <div class="container header-section">
+            <div class="header ">
+
+                <div class="nav_logo">
+                    <div class="logo-mobile">
+                        <a href="#" class="site-logo">
+                            <img src="./images/logo.svg" alt="site logo">
+                        </a>
+                        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <ul class="site-nav">
+                        <li class="site_nav__item"><a href="index.html" class="site_nav__link">home</a></li>
+                        <li class="site_nav__item"><a href="#" class="site_nav__link">about</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="contact">contact us</a>
+
+            </div>
+
+
+            <div class="header-content ">
+                <div class="header-text">
+                    <h1 class="main-title">
+                        Find the <br> best <span class="color">talent</span>
+                    </h1>
+                    <p class="header-des">
+                        Finding the right people and building high <br> performing teams can be hard. Most companies
+                        <br> aren’t tapping into the abundance of global talent. <br> We’re about to change that.
+                    </p>
+                </div>
+                <div class="hero-img">
+                    <img class="hero-circle-red" src="./images/hero-circle-red.svg" alt="hero circle">
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <main class="main-content">
+        <section class="features">
+            <div class="container feature">
+                <hr class="hr">
+                <div class="back-feat"></div>
+                <h1 class="feature-title ">
+                    Build & manage distributed teams like no one else.
+                </h1>
+                <ul class="features-list container">
+                    <li class="features-item">
+                        <img src="./images/icon-circle-man.svg" alt="">
+                        <span class="features-text">
+                            <h2 class="item-title">
+                                Experienced Individuals
+                            </h2>
+                            <p class="item-des">
+                                Our network is made up of highly experienced professionals <br> who are passionate about
+                                what they do.
+                            </p>
+                        </span>
+                    </li>
+                    <li class="features-item">
+                        <img src="./images/icon-circle-check-cog.svg" alt="">
+                        <span class="features-text">
+                            <h2 class="item-title">
+                                Easy to Implement
+                            </h2>
+                            <p class="item-des">
+                                Our processes have been refined over years of implementation <br> meaning our teams
+                                always deliver.
+                            </p>
+                        </span>
+                    </li>
+                    <li class="features-item">
+                        <img src="./images/icon-circle-line-chart.svg" alt="">
+                        <span class="features-text">
+                            <h2 class="item-title">
+                                Enhanced Productivity
+                            </h2>
+                            <p class="item-des">
+                                Our customized platform with in-built analytics helps you <br> manage your distributed
+                                teams.
+                            </p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="clients container">
+            <img class="rect" src="./images/directors-rect.svg" alt="">
+            <h1 class="client-title container">
+                Delivering real results for top companies. Some of our <span class="succes">success stories.</span>
+            </h1>
+            <ul class="clients-list">
+                <li class="client">
+                    <img class="quotes-img" src="./images/icon-quotes.svg" alt="">
+                    <p class="client-th">
+                        “The team perfectly fit the specialized skill set <br> required. They focused on the most
+                        essential <br> features helping us launch the platform eight <br> months faster than planned.”
+                    </p>
+                    <h4 class="client-name">Kady Baker</h4>
+                    <p class="clinet-deg">Product Manager at Bookmark</p>
+                    <img class="heroes" src="./images/kady.jpg" alt="kady">
+                </li>
+                <li class="client">
+                    <img class="quotes-img" src="./images/icon-quotes.svg" alt="">
+                    <p class="client-th">
+                        “We needed to automate our entire onboarding <br> process. The team came in and built out the
+                        <br> whole journey. Since going live, user retention <br> has gone through the roof!”
+                    </p>
+                    <h4 class="client-name">Aiysha Reese</h4>
+                    <p class="clinet-deg">Founder of Manage</p>
+                    <img class="heroes" src="./images/aisha.jpg" alt="aisha">
+                </li>
+                <li class="client">
+                    <img class="quotes-img" src="./images/icon-quotes.svg" alt="">
+                    <p class="client-th">
+                        “Amazing. Our team helped us build an app that <br> delivered a new experience for hiring a
+                        physio. <br> The launch was an instant success with 100k <br> downloads in the first month.”
+                    </p>
+                    <h4 class="client-name">Arthur Clarke</h4>
+                    <p class="clinet-deg">Co-founder of MyPhysio</p>
+                    <img class="heroes" src="./images/arthur.jpg" alt=" arthur ">
+                </li>
+            </ul>
+            <div class="client-bg"></div>
+        </section>
+        <section class='contacts container'>
+            <div class="contact-bg"></div>
+            <h1 class="contact-title">
+                Ready to get started?
+            </h1>
+            <a href="./contact/contact.html" class="contact-link contact">contact us</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-section">
+            <div class="footer-logo">
+                <div class="footer-navs">
+                    <img src="./images/logo.svg" alt="footer logo">
+                    <ul class="footer-nav">
+                        <li class="footer-nav-item"><a href="./index.html" class="footer-nav-link">home</a></li>
+                        <li class="footer-nav-item"><a href="./about/about.html" class="footer-nav-link">about</a></li>
+                    </ul>
+                </div>
+                <p class="addres">987 Hillcrest Lane <br> Irvine, CA <br> California 92714 <br> Call Us : 949-833-7432
+                </p>
+            </div>
+            <div class="socials">
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-pinterest fa-2xl"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="all">Copyright 2020. All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

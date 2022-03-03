@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Livvic;
+  src: url("./Livvic/Livvic-Bold.ttf");
+  src: url("./Livvic/Livvic-SemiBold.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+html,
+body {
+  font-family: Livvic, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1540px;
+  width: 100%;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-section {
+  background-color: #014E56;
+}
+
+.header {
+  padding-top: 7.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-logo {
+  margin-right: 8rem;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.site_nav__item {
+  list-style: none;
+  margin-left: 4rem;
+}
+
+.site_nav__item:first-child {
+  margin-left: 0;
+}
+
+.site_nav__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #FFFFFF;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.site_nav__link:hover {
+  color: #F67E7E;
+}
+
+.contact {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: .9rem 3.3rem;
+  border-radius: 24px;
+  border: 2px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.contact:hover {
+  background-color: #FFFFFF;
+  color: #002529;
+}
+
+.footer-section {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: #002529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 2.5rem;
+}
+
+.footer-nav-item {
+  list-style: none;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.footer-nav-link:hover {
+  color: #F67E7E;
+}
+
+.addres {
+  margin-left: 12.5rem;
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-item {
+  list-style-type: none;
+  margin-left: 1.6rem;
+}
+
+.socials-item:first-child {
+  margin-left: 0;
+}
+
+.social-link {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  color: #FFFFFF;
+}
+
+.social-linki {
+  font-size: 2.4rem;
+}
+
+.social-link:hover {
+  color: #F67E7E;
+}
+
+.all {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.contacts {
+  background-color: #F67E7E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+  position: relative;
+}
+
+.contact-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  color: #012F34;
+}
+
+.contact-link {
+  color: #012F34;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-color: #012F34;
+}
+
+.contact-link:hover {
+  color: #FFFFFF;
+  background-color: #012F34;
+}
+
+.contact-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: url("../images/cta-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .footer-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+    width: 100%;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .site-nav {
+    display: none;
+  }
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 10rem;
+  }
+  .addres {
+    margin-left: 0;
+  }
+}
+
+.mobile-nav {
+  height: 100vh;
+  width: 45%;
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile {
+  color: #F67E7E;
+}
+/*# sourceMappingURL=shared.css.map */

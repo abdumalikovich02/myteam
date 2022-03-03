@@ -1,0 +1,271 @@
+$primary-bg-color-1: #014E56;
+$primary-bg-color-2: #012F34;
+$primary-bg-color-3: #012F34;
+$contact-bg-secondary-text: #F67E7E;
+$primary-text-color: #FFFFFF;
+$bold-weight: 700;
+$regular-weight:600;
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    line-height: 2.8rem;
+}
+
+.header-content {
+    margin-top: 13rem;
+}
+
+.header-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.main-title {
+    color: $primary-text-color;
+    font-size: 10rem;
+    font-weight: $bold-weight;
+    line-height: 10rem;
+    margin: 0;
+    margin-left: 2.5rem;
+}
+
+.color {
+    color: $contact-bg-secondary-text;
+    font: inherit;
+}
+
+.header-des {
+    color: $primary-text-color;
+    font-weight: $regular-weight;
+    font-size: 1.8rem;
+    margin-left: 3rem;
+}
+
+.hero-img {
+    margin-top: 15.5rem;
+    img {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.background {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 25rem;
+    left: 0;
+    background: url('../images/hero-circle-dark.svg');
+    background-repeat: no-repeat;
+    background-position: -100px 0;
+}
+
+.features {
+    margin-top: -10rem;
+    z-index: 5;
+    position: relative;
+}
+
+.feature {
+    background-color: $primary-bg-color-2;
+    padding-top: 20rem;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 14rem;
+}
+
+.hr {
+    position: absolute;
+    background-color: $contact-bg-secondary-text;
+    border: none;
+    width: 5rem;
+    top: 14rem;
+    left: 17.5rem;
+    height: .4rem;
+}
+
+.feature-title {
+    color: $primary-text-color;
+    margin: 0;
+    font-size: 4.8rem;
+    font-weight: $bold-weight;
+    line-height: 4.8rem;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+}
+
+.features-item {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-text {
+    margin-left: 2rem;
+}
+
+.item-title {
+    color: $contact-bg-secondary-text;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: $bold-weight;
+    line-height: 2.8rem;
+}
+
+.item-des {
+    color: $primary-text-color;
+    font-size: 1.5rem;
+    font-weight: $regular-weight;
+    line-height: 2.5rem;
+    opacity: 0.8;
+}
+
+.back-feat {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    background: url('../images/clients-circle.svg');
+    background-repeat: no-repeat;
+    top: 48.5rem;
+    right: 0;
+    background-position: 100px 0;
+}
+
+.clients {
+    background-color: $primary-bg-color-1;
+    text-align: center;
+    padding-top: 14rem;
+    position: relative;
+    padding-bottom: 15rem;
+}
+
+.client-title {
+    color: $primary-text-color;
+    font-size: 4.8rem;
+    font-weight: $bold-weight;
+    line-height: 4.8rem;
+    margin-bottom: 5.6rem;
+}
+
+.succes {
+    font: inherit;
+    color: #79C8C7;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.client {
+    list-style: none;
+}
+
+.quotes-img {
+    transform: translateY(25px);
+}
+
+.client-th {
+    color: $primary-text-color;
+    font-size: 1.5rem;
+    font-weight: $regular-weight;
+    line-height: 2.5rem;
+}
+
+.client-name {
+    color: #79C8C7;
+    margin: 0;
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: $bold-weight;
+    line-height: 2.8rem;
+}
+
+.clinet-deg {
+    margin: 0;
+    margin-top: 0.2rem;
+    color: $primary-text-color;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.heroes {
+    border: 2px solid #C4FFFE;
+    border-radius: 50%;
+}
+
+.client-bg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('../images/directors-circle.svg');
+    background-repeat: no-repeat;
+    background-position: 50px 100px;
+}
+
+.rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:768px) {
+    .background {
+        display: none;
+    }
+    .header-text {
+        flex-wrap: wrap;
+        .main-title {
+            margin-bottom: 2.4rem;
+        }
+    }
+    .hero-circle-red {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature {
+        flex-wrap: wrap;
+        padding-top: 13.6rem;
+        .features-list {
+            margin-top: 6.4rem;
+        }
+    }
+    .hr {
+        top: 10rem;
+        left: 9.8rem;
+    }
+    .back-feat {
+        top: 0;
+    }
+    .clients-list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:400px) {
+    .main-title {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .hero-circle-red {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+}

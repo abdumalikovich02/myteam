@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Livvic;
+    src: url('./Livvic/Livvic-Bold.ttf');
+    src: url('./Livvic/Livvic-SemiBold.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+html,
+body {
+    font-family: Livvic, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-bg-color-1: #014E56;
+$primary-bg-color-2: #012F34;
+$primary-bg-color-3: #002529;
+$contact-bg-secondary-text: #F67E7E;
+$primary-text-color: #FFFFFF;
+$bold-weight: 700;
+$regular-weight:600;
+.container {
+    max-width: 1540px;
+    width: 100%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-section {
+    background-color: $primary-bg-color-1;
+}
+
+.header {
+    padding-top: 7.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    margin-right: 8rem;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.site_nav__item {
+    list-style: none;
+    margin-left: 4rem;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.site_nav__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: $regular-weight;
+    line-height: 2.8rem;
+    color: $primary-text-color;
+    transition: .3s ease;
+    &:hover {
+        color: $contact-bg-secondary-text;
+    }
+}
+
+.contact {
+    text-decoration: none;
+    color: $primary-text-color;
+    padding: .9rem 3.3rem;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: $regular-weight;
+    line-height: 2.8rem;
+    transition: .3s ease;
+    &:hover {
+        background-color: $primary-text-color;
+        color: #002529;
+    }
+}
+
+.footer-section {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    background-color: $primary-bg-color-3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 2.5rem;
+}
+
+.footer-nav-item {
+    list-style: none;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: $primary-text-color;
+    font-size: 1.8rem;
+    font-weight: $regular-weight;
+    line-height: 2.8rem;
+    transition: .3s ease;
+    &:hover {
+        color: $contact-bg-secondary-text;
+    }
+}
+
+.addres {
+    margin-left: 12.5rem;
+    color: $primary-text-color;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    font-weight: $regular-weight;
+    line-height: 2.5rem;
+}
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.socials-item {
+    list-style-type: none;
+    margin-left: 1.6rem;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.social-link {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: .3s ease;
+    &i {
+        font-size: 2.4rem;
+    }
+    color: $primary-text-color;
+    &:hover {
+        color: $contact-bg-secondary-text;
+    }
+}
+
+.all {
+    color: $primary-text-color;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    font-weight: $regular-weight;
+    line-height: 2.5rem;
+}
+
+.contacts {
+    background-color: $contact-bg-secondary-text;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 7.6rem;
+    padding-bottom: 7.6rem;
+    position: relative;
+}
+
+.contact-title {
+    font-size: 4.8rem;
+    font-weight: $bold-weight;
+    line-height: 4.8rem;
+    color: $primary-bg-color-2;
+}
+
+.contact-link {
+    color: $primary-bg-color-2;
+    transition: .3s ease;
+    border-color: $primary-bg-color-2;
+    &:hover {
+        color: $primary-text-color;
+        background-color: $primary-bg-color-2;
+    }
+}
+
+.contact-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: url('../images/cta-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 60px;
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 768px;
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .footer-logo {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        max-width: 400px;
+        width: 100%;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+    .site-nav {
+        display: none;
+    }
+    .contacts {
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+    .addres {
+        margin-left: 0;
+    }
+}
